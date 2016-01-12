@@ -1,0 +1,295 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		744AA4AD1C3F51BB008C3154 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 744AA4AC1C3F51BB008C3154 /* main.swift */; };
+		744AA4B61C3F51FE008C3154 /* example.c in Sources */ = {isa = PBXBuildFile; fileRef = 744AA4B41C3F51FE008C3154 /* example.c */; };
+		744AA4BE1C3F5287008C3154 /* liblua5.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 744AA4BD1C3F5287008C3154 /* liblua5.1.a */; };
+		744AA4C01C3F53E4008C3154 /* example.lua in CopyFiles */ = {isa = PBXBuildFile; fileRef = 744AA4BF1C3F52D3008C3154 /* example.lua */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		744AA4A71C3F51BB008C3154 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				744AA4C01C3F53E4008C3154 /* example.lua in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		744AA4A91C3F51BB008C3154 /* swift-lua-bridge-example */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "swift-lua-bridge-example"; sourceTree = BUILT_PRODUCTS_DIR; };
+		744AA4AC1C3F51BB008C3154 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		744AA4B31C3F51FE008C3154 /* swift-lua-bridge-example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-lua-bridge-example-Bridging-Header.h"; sourceTree = "<group>"; };
+		744AA4B41C3F51FE008C3154 /* example.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = example.c; sourceTree = "<group>"; };
+		744AA4B51C3F51FE008C3154 /* example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = example.h; sourceTree = "<group>"; };
+		744AA4B71C3F5269008C3154 /* lauxlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lauxlib.h; sourceTree = "<group>"; };
+		744AA4B81C3F5269008C3154 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
+		744AA4B91C3F5269008C3154 /* lua.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = lua.hpp; sourceTree = "<group>"; };
+		744AA4BA1C3F5269008C3154 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
+		744AA4BB1C3F5269008C3154 /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
+		744AA4BD1C3F5287008C3154 /* liblua5.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = liblua5.1.a; sourceTree = "<group>"; };
+		744AA4BF1C3F52D3008C3154 /* example.lua */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = example.lua; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		744AA4A61C3F51BB008C3154 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744AA4BE1C3F5287008C3154 /* liblua5.1.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		744AA4A01C3F51BB008C3154 = {
+			isa = PBXGroup;
+			children = (
+				744AA4AB1C3F51BB008C3154 /* swift-lua-bridge-example */,
+				744AA4AA1C3F51BB008C3154 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		744AA4AA1C3F51BB008C3154 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				744AA4A91C3F51BB008C3154 /* swift-lua-bridge-example */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		744AA4AB1C3F51BB008C3154 /* swift-lua-bridge-example */ = {
+			isa = PBXGroup;
+			children = (
+				744AA4BC1C3F5272008C3154 /* lua */,
+				744AA4AC1C3F51BB008C3154 /* main.swift */,
+				744AA4B41C3F51FE008C3154 /* example.c */,
+				744AA4B51C3F51FE008C3154 /* example.h */,
+				744AA4B31C3F51FE008C3154 /* swift-lua-bridge-example-Bridging-Header.h */,
+				744AA4BF1C3F52D3008C3154 /* example.lua */,
+			);
+			path = "swift-lua-bridge-example";
+			sourceTree = "<group>";
+		};
+		744AA4BC1C3F5272008C3154 /* lua */ = {
+			isa = PBXGroup;
+			children = (
+				744AA4BD1C3F5287008C3154 /* liblua5.1.a */,
+				744AA4B71C3F5269008C3154 /* lauxlib.h */,
+				744AA4B81C3F5269008C3154 /* lua.h */,
+				744AA4B91C3F5269008C3154 /* lua.hpp */,
+				744AA4BA1C3F5269008C3154 /* luaconf.h */,
+				744AA4BB1C3F5269008C3154 /* lualib.h */,
+			);
+			name = lua;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		744AA4A81C3F51BB008C3154 /* swift-lua-bridge-example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 744AA4B01C3F51BB008C3154 /* Build configuration list for PBXNativeTarget "swift-lua-bridge-example" */;
+			buildPhases = (
+				744AA4A51C3F51BB008C3154 /* Sources */,
+				744AA4A61C3F51BB008C3154 /* Frameworks */,
+				744AA4A71C3F51BB008C3154 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "swift-lua-bridge-example";
+			productName = "swift-lua-bridge-example";
+			productReference = 744AA4A91C3F51BB008C3154 /* swift-lua-bridge-example */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		744AA4A11C3F51BB008C3154 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = dolphilia;
+				TargetAttributes = {
+					744AA4A81C3F51BB008C3154 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 744AA4A41C3F51BB008C3154 /* Build configuration list for PBXProject "swift-lua-bridge-example" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 744AA4A01C3F51BB008C3154;
+			productRefGroup = 744AA4AA1C3F51BB008C3154 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				744AA4A81C3F51BB008C3154 /* swift-lua-bridge-example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		744AA4A51C3F51BB008C3154 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				744AA4B61C3F51FE008C3154 /* example.c in Sources */,
+				744AA4AD1C3F51BB008C3154 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		744AA4AE1C3F51BB008C3154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		744AA4AF1C3F51BB008C3154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		744AA4B11C3F51BB008C3154 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swift-lua-bridge-example",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-lua-bridge-example/swift-lua-bridge-example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		744AA4B21C3F51BB008C3154 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swift-lua-bridge-example",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-lua-bridge-example/swift-lua-bridge-example-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		744AA4A41C3F51BB008C3154 /* Build configuration list for PBXProject "swift-lua-bridge-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744AA4AE1C3F51BB008C3154 /* Debug */,
+				744AA4AF1C3F51BB008C3154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		744AA4B01C3F51BB008C3154 /* Build configuration list for PBXNativeTarget "swift-lua-bridge-example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				744AA4B11C3F51BB008C3154 /* Debug */,
+				744AA4B21C3F51BB008C3154 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 744AA4A11C3F51BB008C3154 /* Project object */;
+}
